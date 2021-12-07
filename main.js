@@ -31,7 +31,7 @@ function Hamburger (size, stuffings = []) {
     }
 }
 
-let hamburger = new Hamburger(SIZE_SMALL);
+const hamburger = new Hamburger(SIZE_SMALL);
 console.log('Price without stuffing: ' + hamburger.getPrice());
 console.log('Calories without stuffing: ' + hamburger.getCallories());
 
