@@ -32,24 +32,21 @@ function Hamburger (size, stuffings = []) {
 }
 
 let hamburger = new Hamburger(SIZE_SMALL);
-console.log(hamburger.getPrice());
-console.log(hamburger.getCallories());
+console.log('Price without stuffing: ' + hamburger.getPrice());
+console.log('Calories without stuffing: ' + hamburger.getCallories());
 
 //Добавим сыр
-hamburger.addModifier(STUFF_CHEESE);
-console.log(hamburger.getPrice());
-console.log(hamburger.getCallories());
 
-//Добавим еще сыр
 hamburger.addModifier(STUFF_CHEESE);
-console.log(hamburger.getPrice());
-console.log(hamburger.getCallories());
+console.log('Price with cheese: ' + hamburger.getPrice());
+console.log('Calories with cheese: ' + hamburger.getCallories());
 
 //Добавим еще сыр + приправа + майонез
+
 hamburger.addModifier(STUFF_CHEESE);
 hamburger.addModifier(STUFF_FLAVOR);
 hamburger.addModifier(STUFF_MAYO);
-console.log(hamburger.getPrice());
-console.log(hamburger.getCallories());
+console.log('Price with double cheese, flavor and mayonnaise: ' + hamburger.getPrice());
+console.log('Calories with double cheese, flavor and mayonnaise: ' + hamburger.getCallories());
 
 
